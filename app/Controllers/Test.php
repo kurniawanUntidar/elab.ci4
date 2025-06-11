@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
-use App\Models\TestModel; // Pastikan untuk mengimpor Model yang baru Anda buat
+use App\Models\UsersModel;
+use App\Models\UsersModelModel; // Pastikan untuk mengimpor Model yang baru Anda buat
 
 class Test extends BaseController
 {
@@ -8,7 +9,7 @@ class Test extends BaseController
 
     public function __construct()
     {
-        $this->testModel = new TestModel(); // Inisialisasi Model di constructor
+        $this->testModel = new UsersModel(); // Inisialisasi Model di constructor
     }
 
     public function index(): string

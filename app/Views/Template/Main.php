@@ -3,7 +3,7 @@
 
    <?= $this->include('Template/Header') ?>
 
-   <?= $this->renderSection('content') ?> </main> 
+   <main> <?= $this->renderSection('content') ?> </main> 
 
    <?= $this->include('Template/Footer') ?> 
    
