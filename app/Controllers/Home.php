@@ -6,6 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo "Controler Home -> method index"; 
+        $data['title']='Home';
+        return view('guest/Home',$data);
     }
 }
