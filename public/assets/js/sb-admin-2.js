@@ -24,6 +24,29 @@
     };
   });
 
+    // Toggle the nav navigation
+  $("#navbarToggle, #navbarToggleTop").on('click', function(e) {
+    $("body").toggleClass("navbar-toggled");
+    $(".navbar").toggleClass("toggled");
+    if ($(".navbar").hasClass("toggled")) {
+      $('.navbar .collapse').collapse('hide');
+    };
+  });
+
+  // Close any open menu accordions when window is resized below 768px
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+      $('.navbar .collapse').collapse('hide');
+    };
+    
+    // Toggle the nav navigation when window is resized below 480px
+    if ($(window).width() < 480 && !$(".navbar").hasClass("toggled")) {
+      $("body").addClass("navbar-toggled");
+      $(".navbar").addClass("toggled");
+      $('.navbar .collapse').collapse('hide');
+    };
+  });
+
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {
     if ($(window).width() > 768) {
