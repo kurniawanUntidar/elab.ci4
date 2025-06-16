@@ -59,11 +59,28 @@
                         </div>
                     </form>
 
-                    <div class="collapse navbar-collapse toggled" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item collapsed"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <div class="collapse navbar-collapse toggled align-items-center justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav active">
+                        <li class="nav-item collapsed"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item collapsed"><a class="nav-link" href="#">Profile</a></li>
-                        <li class="nav-item collapsed"><a class="nav-link" href="#">Pricing</a></li>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assets</a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Alat
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Bahan
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item collapsed"><a class="nav-link" href="<?= base_url('Auth/')?>">Login</a></li>
                     </ul>
                     </div>
                     
