@@ -80,7 +80,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="nav-item collapsed"><a class="nav-link" href="<?= base_url('Auth/')?>">Login</a></li>
+                        <li class="nav-item collapsed"><a class="nav-link" href="<?= base_url('auth/')?>">Login</a></li>
                     </ul>
                     </div>
                     

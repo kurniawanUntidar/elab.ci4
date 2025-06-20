@@ -10,4 +10,5 @@ $routes->get('/home','Home::index');
 //$routes->get('/about', 'Pages::about');
 // Tambahkan baris ini di tempat yang sesuai, misalnya di bawah rute produk Anda
 $routes->get('/test', 'Test::index');
-$routes->get('/Auth', 'Auth::index');
+$routes->get('/auth', 'Auth::index');
+$routes->resource('userapi');
